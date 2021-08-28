@@ -1,0 +1,71 @@
+/* fonts */
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Raleway:wght@500&display=swap");
+
+/* global properties */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* end of global properties */
+
+/* variables */
+:root {
+  --background-clr: #ffefd3;
+  --secondary-clr: #ffc49b;
+  --primary-clr: #001b2e;
+  --primary-light: #adb6c4;
+  --clr-grey: #617d98;
+  --ff-primary: "Oswald", sans-serif;
+  --ff-secondary: "Raleway", sans-serif;
+  --spacing: 0.2rem;
+}
+/* end of variables */
+
+body,
+html {
+  height: 100%;
+}
+
+body {
+  background-color: var(--background-clr);
+  line-height: 1.5;
+}
+
+/* header */
+.banner {
+  background: url(./main-image.jpeg) no-repeat center/cover;
+  min-height: 50%;
+}
+
+header nav > ul {
+  display: flex;
+  font-family: var(--ff-primary);
+  background-color: #555;
+
+  /* flex-direction: column; */
+  justify-content: space-around;
+  /* align-items: center; */
+}
+
+nav ul li {
+  list-style-type: none;
+  padding: 0.2em;
+  color: var(--primary-clr);
+  font-size: 2em;
+}
+
+nav li:hover {
+  border-bottom: 5px solid var(--secondary-clr);
+}
+
+@media screen and (min-width: 1500px) {
+  .banner {
+    min-height: 100%;
+  }
+  /* header nav > ul {
+    justify-content: flex-end;
+    background-color: transparent;
+  } */
+}
