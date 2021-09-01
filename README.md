@@ -1,7 +1,7 @@
 # my-portfolio
 
 Name: My Portfolio
-Description: Building my portfoli page to showcase my skills
+Description: Building my portfolio page to showcase my skills
 Website features:
 
 1. Nav bar at the top
