@@ -44,10 +44,7 @@ header nav > ul {
   display: flex;
   font-family: var(--ff-primary);
   background-color: #555;
-
-  /* flex-direction: column; */
   justify-content: space-around;
-  /* align-items: center; */
 }
 
 nav ul li {
@@ -59,16 +56,7 @@ nav ul li {
 
 nav li:hover {
   border-bottom: 5px solid var(--secondary-clr);
-}
-
-@media screen and (min-width: 1500px) {
-  .banner {
-    min-height: 100%;
-  }
-  /* header nav > ul {
-    justify-content: flex-end;
-    background-color: transparent;
-  } */
+  cursor: pointer;
 }
 
 .introduction {
@@ -82,7 +70,6 @@ nav li:hover {
 .introduction h1 {
   text-transform: capitalize;
   color: var(--primary-light);
-  font-size: 3em;
 }
 
 .introduction p {
@@ -92,28 +79,44 @@ nav li:hover {
 }
 
 .content-divider {
-  border: 8px solid var(--primary-clr);
-  /* add linear g */
+  height: 0.75em;
+  background-color: var(--primary-clr);
+  background-image: linear-gradient(to right, grey, black, grey);
 }
 
-.about {
+#about {
   margin: 1em;
-  /* border: 1em sold var(--primary-clr); */
 }
 
 .img {
   float: left;
-  display: inline-block;
   border: 1px solid var(--primary-clr);
   border-radius: 2em;
   margin-right: 2em;
 }
 
-.about-content {
+p#about-content::before {
+  content: "Hi, I'm Tanvi. Nice to meet you.";
+  font-size: 1.75em;
+  color: var(--clr-grey);
+  display: block;
+  text-align: center;
+}
+#about-content {
   margin-left: 2em;
   font-size: 1.5em;
   font-family: var(--ff-secondary);
+  text-align: justify;
 }
 
-@media screen and (min) {
+@media screen and (min-width: 1500px) {
+  .banner {
+    min-height: 100%;
+  }
+  .introduction h1 {
+    font-size: 5em;
+  }
+  .introduction p {
+    font-size: 1.5em;
+  }
 }
