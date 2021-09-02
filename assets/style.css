@@ -50,10 +50,13 @@ header nav > ul {
 nav ul li {
   list-style-type: none;
   padding: 0.2em;
-  color: var(--primary-clr);
   font-size: 2em;
 }
 
+nav ul li a {
+  text-decoration: none;
+  color: var(--primary-clr);
+}
 nav li:hover {
   border-bottom: 5px solid var(--secondary-clr);
   cursor: pointer;
@@ -95,14 +98,14 @@ nav li:hover {
   margin-right: 2em;
 }
 
-p#about-content::before {
+pabout-content::before {
   content: "Hi, I'm Tanvi. Nice to meet you.";
   font-size: 1.75em;
   color: var(--clr-grey);
   display: block;
   text-align: center;
 }
-#about-content {
+.about-content {
   margin-left: 2em;
   font-size: 1.5em;
   font-family: var(--ff-secondary);
